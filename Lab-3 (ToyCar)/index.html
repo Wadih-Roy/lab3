@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Output Section on the left -->
+        <div id="output">
+            <h2>Car Details</h2>
+            <p id="car-details">Your car details will be displayed here after submission.</p>
+        </div>
+    
+    <div class="preset">
+        <select name="preset" id="preset">
+            <option name="">--- Select a preset ---</option>
+            <option value="car1">Preset 1</option>
+            <option value="car2">Preset 2</option>
+            <option value="car3">Preset 3</option>
+        </select>
+    </div>
+    <div class="content">
+        <h1>Create Your Car</h1>
+        <p>Color</p>
+        <select name="color" id="color">
+            <option value="Red">Red</option>
+            <option value="Black">Black</option>
+            <option value="Yellow">Yellow</option>
+        </select>
+
+        <p>Size</p>
+        <div class="size">
+                <label><input type="radio" name="size" value="Small" checked>Small</label>
+                <label><input type="radio" name="size" value="Medium">Medium</label>
+                <label><input type="radio" name="size" value="Large">Large</label>
+        </div>
+
+        <p>Weight</p>
+        <div class="weight">
+            <select name="weight" id="weight">
+                <option value="300g">300g</option>
+                <option value="500g">500g</option>
+                <option value="1Kg">1Kg</option>
+            </select>
+        </div>
+
+        <p>Year</p>
+        <div class="year">
+            <select name="year" id="year">
+                <option value="1990">1990</option>
+                <option value="2000">2000</option>
+                <option value="2014">2014</option>
+                <option value="2024">2024</option>
+            </select>
+        </div>
+        
+        <p>Number of Doors</p>
+        <div class="doors">
+            <label><input type="radio" name="doors" value="2" checked>2 Door</label>
+            <label><input type="radio" name="doors" value="4">4 Door</label>
+        </div>
+
+        <p>Price</p>
+        <div class="price">
+            <select name="price" id="price">
+                <option value="$10">$10</option>
+                <option value="$20">$20</option>
+                <option value="$30">$30</option>
+            </select>
+        </div>
+        <button id="submit">Submit</button>
+    </div>
+</body>
+</html>
